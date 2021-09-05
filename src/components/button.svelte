@@ -1,26 +1,27 @@
 <script>
+	import {Link} from "svelte-navigator"
 	export let src = '';
 	export let name = 'test';
 	export let color = 'FBD283';
 	export let path = '/Web_Development';
 </script>
 
-<a href="/{path}">
+<Link to="/{path}" style="font-family: 'ubuntu', sans-serif;text-decoration: none;color: black;font-weight: bolder;">
 	<div class="button" style="background-color: #{color};">
 		{#if src !== ''}
 			<img {src} alt={name} class="icon" />
 		{/if}
 		<h3>{name}</h3>
 	</div>
-</a>
+</Link>
 
 <style>
-	a {
+	/* Link {
 		font-family: 'ubuntu', sans-serif;
 		text-decoration: none;
 		color: black;
 		font-weight: bolder;
-	}
+	} */
 
 	.button {
 		display: flex;

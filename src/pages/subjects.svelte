@@ -1,9 +1,9 @@
 <script>
-	import { articles, getArticles, subjects } from '../fb';
+	import { getCollectionIndex, subjects, collectionIntro } from '../fb';
 	import Styledbutton from '../components/button.svelte';
 	let pathsArray = window.location.pathname.split('/').filter((el) => el != '');
 
-	getArticles(pathsArray[0], pathsArray[1]);
+	getCollectionIndex(pathsArray[0]);
 
 	function getRandomColor() {
 		var letters = '0123456789ABCDEF';
@@ -16,22 +16,19 @@
 </script>
 
 <main>
-	<h1>{pathsArray[1].replace('_', ' ')}</h1>
+	<h1>{pathsArray[0].replace('_', ' ')}</h1>
 
 	<p>
-		{#each $subjects as subject}
-			{#if subject.name === pathsArray[1]}
-				{subject.intro}
-			{/if}
-		{/each}
+		{$collectionIntro}
 	</p>
 
 	<div class="buttons">
-		{#each $articles as article}
+		{#each $subjects as subject}
 			<Styledbutton
-				path={`${pathsArray[0]}/${pathsArray[1]}/${article.id}`}
+				path={pathsArray[0] + '/' + subject.name}
 				color={getRandomColor()}
-				name={article.data().name}
+				name={subject.name}
+				src={subject.icon}
 			/>
 		{/each}
 	</div>
