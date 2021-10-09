@@ -11,8 +11,8 @@
   style="font-family: 'ubuntu', sans-serif;text-decoration: none;color: black;font-weight: bolder;"
 >
   <div class="button" style="background-color: #{color};">
-    {#if src !== ""}
-      <img {src} alt={name} class="icon" />
+    {#if src !== "" || src === undefined}
+      <img {src} alt="" class="icon" />
     {/if}
     <h3>{name}</h3>
   </div>
