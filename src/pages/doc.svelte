@@ -14,5 +14,6 @@
 <style>
   article {
     padding-bottom: 10vh !important;
+    font-family: "ubuntu", sans-serif;
   }
 </style>

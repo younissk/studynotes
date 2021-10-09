@@ -35,15 +35,6 @@
 </main>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
-  h1 {
-    color: #f02d35;
-  }
-
-  h1:focus {
-    outline: none;
-  }
-
   p {
     font-weight: bolder;
     width: 70vw;
@@ -51,7 +42,7 @@
 
   * {
     font-family: "ubuntu", sans-serif;
-    letter-spacing: 0.3vw;
+    /* letter-spacing: 0.3vw; */
   }
   main {
     margin: 50px;
