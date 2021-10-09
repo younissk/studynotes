@@ -21,7 +21,13 @@
       name="Sanitäter"
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Logo_ASB%C3%96.svg/1200px-Logo_ASB%C3%96.svg.png"
     />
-    <!-- <Styledbutton
+    <Styledbutton
+      path="Hochbau"
+      color="FFA932"
+      name="Hochbau"
+      src="https://images.emojiterra.com/twitter/v13.0/512px/1f3e0.png"
+    />
+    <Styledbutton
       path="Language"
       color="FE9C53"
       name="Language"
@@ -29,10 +35,10 @@
     />
     <Styledbutton
       path="Knowledge"
-      color="F76242"
+      color="007900"
       name="Knowledge"
       src="https://cdn.iconscout.com/icon/free/png-256/islam-100384.png"
-    /> -->
+    />
     <!-- <Styledbutton
       path="Design"
       color="F02D35"
